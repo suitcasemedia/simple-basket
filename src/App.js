@@ -46,7 +46,7 @@ class App extends Component {
     item.subTotal = 0;
     item.quantity = 0;
     const items = this.state.items;
-    this.setState({items});
+    this.setState({items},()=>this.updateTotal());
 
   }
 
